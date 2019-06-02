@@ -4,14 +4,11 @@ const PopupMenu = imports.ui.popupMenu;
 var iconMenuItem;
 
 function init() {
-    iconMenuItem = new UserIconMenuItem();
-    // var userMenu = Main.panel.statusArea.aggregateMenu.menu;
-    // global.log(userMenu.constructor.name);
-    // userMenu.addMenuItem(iconMenuItem);
-    Main.panel.statusArea.aggregateMenu.menu.addMenuItem(iconMenuItem);
 }
 
 function enable() {
+    iconMenuItem = new UserIconMenuItem();
+    Main.panel.statusArea.aggregateMenu.menu.addMenuItem(iconMenuItem);
 }
 
 function disable() {
